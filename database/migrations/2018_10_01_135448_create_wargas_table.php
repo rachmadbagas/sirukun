@@ -15,6 +15,13 @@ class CreateWargasTable extends Migration
     {
         Schema::create('wargas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nik',20);
+            $table->string('nkk',20);
+            $table->string('nama',100);
+            $table->string('tempat_lahir',50);
+            $table->date('tanggal_lahir');
+            $table->enum('jenkel',['l','p']);
+            $table->boolean('is_kepalakeluarga');
             $table->integer('rt_id')->unsigned();
             $table->timestamps();
 

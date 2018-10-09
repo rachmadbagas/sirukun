@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 // Route::middleware(['auth'])->group(function (){
 
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('admin');
 
 Route::get('/admin/rw', 'RwController@index')->name('rw.index');
 Route::get('/admin/rw/add','RwController@create')->name('rw.create');

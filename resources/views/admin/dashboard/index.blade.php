@@ -1,6 +1,5 @@
 @extends('admin.template')
 
-
 @section('content')
 
 <div class="content-wrapper">
@@ -8,32 +7,32 @@
       <div class="col-md-6 col-lg-3 grid-margin stretch-card">
         <div class="card bg-gradient-primary text-white text-center card-shadow-primary">
           <div class="card-body">
-            <h6 class="font-weight-normal">Total invoices</h6>
-            <h2 class="mb-0">28893</h2>
+            <h6 class="font-weight-normal">Warga</h6>
+            <h2 class="mb-0">500</h2>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 grid-margin stretch-card">
         <div class="card bg-gradient-danger text-white text-center card-shadow-danger">
           <div class="card-body">
-            <h6 class="font-weight-normal">Total invoices</h6>
-            <h2 class="mb-0">28893</h2>
+            <h6 class="font-weight-normal">Kepala Keluarga</h6>
+            <h2 class="mb-0">10</h2>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 grid-margin stretch-card">
         <div class="card bg-gradient-warning text-white text-center card-shadow-warning">
           <div class="card-body">
-            <h6 class="font-weight-normal">Total invoices</h6>
-            <h2 class="mb-0">28893</h2>
+            <h6 class="font-weight-normal">Jumlah Aset</h6>
+            <h2 class="mb-0">50</h2>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 grid-margin stretch-card">
         <div class="card bg-gradient-info text-white text-center card-shadow-info">
           <div class="card-body">
-            <h6 class="font-weight-normal">Total invoices</h6>
-            <h2 class="mb-0">28893</h2>
+            <h6 class="font-weight-normal">Kas</h6>
+            <h2 class="mb-0">Rp. 500.000</h2>
           </div>
         </div>
       </div>
@@ -280,3 +279,7 @@
   </div>
     
 @endsection
+
+@push('script')
+    
+@endpush

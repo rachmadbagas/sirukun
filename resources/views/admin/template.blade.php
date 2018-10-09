@@ -167,20 +167,16 @@
         </button>
       </div>
     </nav>
-    <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_settings-panel.html -->
-      <!-- partial -->
-      <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
+          <li class="nav-item {{ request()->is('admin') ? 'aktif' : '' }}">
+            <a class="nav-link" href="{{ route('admin') }}">
               <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {{ request()->is('admin/*') ? 'aktif' : '' }}">
             <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
               <i class="mdi mdi-bullseye-arrow menu-icon"></i>
               <span class="menu-title">Administrasi</span>

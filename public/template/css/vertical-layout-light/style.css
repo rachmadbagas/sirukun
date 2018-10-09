@@ -27299,8 +27299,18 @@ div.tagsinput span.tag a {
   color: #404852;
 }
 
-.sidebar .nav .nav-item.active > .nav-link:before {
+/* .sidebar .nav .nav-item.active > .nav-link:before {
   content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #5f6be3;
+  left: 0;
+  top: 0;
+} */
+
+.sidebar .nav .nav-item.aktif > .nav-link:before {
+  content: ""; 
   position: absolute;
   width: 5px;
   height: 100%;
